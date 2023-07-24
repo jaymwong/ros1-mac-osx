@@ -1,9 +1,9 @@
 # ROS1 Mac OSX Support 
-Developing on Mac OSX with ROS locally built for the past 6+ years has been nice, especially with the support scripts from [ros-install-osx](https://github.com/mikepurvis/ros-install-osx). However, recently, `brew` has been failing more and more commands to a point where building ROS on a Mac is not only frustrating but extremely time consuming. The purpose of this repository is to hold a working copy of the libraries that has successfully built ROS on my Mac OSX machine. It's not elegant at all, in fact, it's very "hacky". But I'm putting this together but for myself and the community, however, I make no guarantees as to whether it will work for you. 
+Developing on Mac OSX with ROS locally built for the past 6+ years has been nice, especially with the support scripts from [ros-install-osx](https://github.com/mikepurvis/ros-install-osx). However, recently, `brew` has been failing more and more commands to a point where building ROS on a Mac is not only frustrating but extremely time consuming. The purpose of this repository is to hold a working copy of the libraries that has successfully built ROS on my Mac OSX machine. It's not elegant at all, in fact, it's very "hacky" and might clobber some existing `brew` packages on your machine. Regardless, I'm putting this together for my future self and the greater ROS community. That being said, I make no guarantees as to whether it will work for you. Good luck!
 
 Notable ROS components that have been tested to work for development,
 - ROS1 Kinetic 
-- OpenCV 3.3.1
+- OpenCV (3.3.1)
 - PCL
 - Rviz
 - Rqt
@@ -21,7 +21,7 @@ unzip ros-kinetic-mac-osx-catalina.zip -d /opt/
 ```
 
 ## Setup your `~/.bashrc`
-You'll need to setup your `~/.bashrc` accordingly if you'll like to build your workspace using `catkin`, therefore append the following into your `~/.bashrc`
+You'll need to setup your `~/.bashrc` accordingly if you'll like to build your workspace using `catkin`. Append the following into your `~/.bashrc`
 
 ```
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages/
@@ -29,9 +29,7 @@ export LD_LIBRARY_PATH=/opt/ros/kinetic/lib
 export LIBGL_ALWAYS_SOFTWARE=1s
 
 source /opt/ros/kinetic/setup.bash
-
 ```
-
 
 ## Known Issues
 ### Boost Upgrade 
@@ -40,3 +38,6 @@ There seems to be a `boost` incompatibility with the target `boost` built in the
 brew install boost@1.76
 brew link --overwrite boost@1.76
 ```
+
+## TODO (ROS2)
+Yes, I know ROS1 Kinetic is EOL and no longer supported. Yes, I know Ubuntu 16.04 is EOL and no longer support. And by definition, any development we do integrating with ROS1 Kinetic is by nature not supported. I've been meaning to eventually get around to a successful ROS2 build on my Mac, but again, this is technically unsupported as well and has been much more difficult to wrap my head around compared to ROS1 source build.  
