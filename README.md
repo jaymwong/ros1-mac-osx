@@ -13,7 +13,7 @@ The following machnes have been tested,
 - Mac OS: Sierra (circa 2019) 
 
 ## Instructions
-- Download the `.zip` files I've conveniently stored on (https://drive.google.com/drive/folders/128wczlwCJNakNOX8ZSfXDFwe7Zl9UEhI?usp=share_link)[Google Drive].
+- Download the `.zip` files I've conveniently stored on [Google Drive](https://drive.google.com/drive/folders/128wczlwCJNakNOX8ZSfXDFwe7Zl9UEhI?usp=share_link).
 - Extract them directly into the desired directories,
 ```
 unzip usr-local-boost-1-67.zip -d /usr/local/
@@ -35,7 +35,7 @@ source /opt/ros/kinetic/setup.bash
 
 ## Known Issues
 ### Boost Upgrade 
-There seems to be a `boost` incompatibility with the target `boost` built in the `.zip` due to (https://github.com/phusion/passenger/issues/2213)[boost1.67]. I was able to fix this locally via forcefully upgrading inside `brew` to `1.76`, however, it reportedly works for `1.69`
+There seems to be a `boost` incompatibility with the target `boost` built in the `.zip` due to [boost1.67](https://github.com/phusion/passenger/issues/2213). I was able to fix this locally via forcefully upgrading inside `brew` to `1.76`, however, it reportedly works for `1.69`
 
 ```
 brew install boost@1.76
