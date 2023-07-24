@@ -16,7 +16,7 @@ The following OSX versions have been tested,
 - Download the `.zip` files I've conveniently stored on [Google Drive](https://drive.google.com/drive/folders/128wczlwCJNakNOX8ZSfXDFwe7Zl9UEhI?usp=share_link), I would advise you do this either via an Ethernet connection (or somewhere with fast WiFi, since the `*.zip` files are about 3GB). 
 - Extract them directly into the desired directories,
 ```
-unzip ros1-usr-local-boost-1-67.zip -d /usr/local/
+unzip ros1-usr-local-with-boost-1-67.zip -d /usr/local/
 unzip ros1-kinetic-mac-osx-catalina.zip -d /opt/
 ```
 
