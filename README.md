@@ -4,9 +4,9 @@ Developing on Mac OSX with ROS locally built for the past 6+ years has been nice
 Notable ROS components that have been tested to work for development,
 - ROS1 Kinetic 
 - OpenCV (3.3.1)
-- PCL
-- Rviz
-- Rqt
+- PCL (1.8.1)
+- Rviz (1.12.13)
+- Qt (5.11.1), OGRE (1.9.0) 
 
 The following OSX versions have been tested,
 - Mac OS: Catalina (10.15.7)
