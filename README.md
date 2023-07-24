@@ -17,7 +17,7 @@ The following OSX versions have been tested,
 - Extract them directly into the desired directories,
 ```
 unzip usr-local-boost-1-67.zip -d /usr/local/
-unzip ros-kinetic-mac-osx-catalina.zip -d /opt/
+unzip ros1-kinetic-mac-osx-catalina.zip -d /opt/
 ```
 
 ## Setup your `~/.bashrc`
