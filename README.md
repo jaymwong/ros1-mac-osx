@@ -43,5 +43,5 @@ brew install boost@1.76
 brew link --overwrite boost@1.76
 ```
 
-## TODO (ROS2)
-Yes, I know ROS1 Kinetic is EOL and no longer supported. Yes, I know Ubuntu 16.04 is EOL and no longer support. And by definition, any development we do on Mac OSX using Kinetic to deploy with Ubuntu 16.04 in production is, by nature not supported. Yet, we've deployed multiple robots in production at @SouthieAutonmy using this architecture with several workarounds to overcome the drawbacks for ROS1. Again, not elegant. However, this is definitely a form of tech debt I want you to know, if you are to proceed with this route. I've been meaning to eventually get around to a successful ROS2 build on my Mac, but again, this is technically unsupported as well and has been much more difficult to wrap my head around compared to ROS1 source build.  -- Jay M. Wong (2023)
+## TODO (Mac OSX build with ROS2)
+I have yet to try this, however, I did come across a decent [blog](http://www.robotandchisel.com/2020/08/10/rviz2-on-mac/) with some instruction demonstrating that this is indeed possible. 
