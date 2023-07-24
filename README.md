@@ -5,6 +5,14 @@ The following my current machine versions:
 - Mac OS: Catalina (10.15.7)
 - ROS1 Kinetic 
 
+## Instructions
+- Download the `.zip` files I've conveniently stored on (https://drive.google.com/drive/folders/128wczlwCJNakNOX8ZSfXDFwe7Zl9UEhI?usp=share_link)[Google Drive].
+- Extract them directly into the desired directories,
+```
+unzip usr-local-boost-1-67.zip -d /usr/local/
+unzip ros-kinetic-mac-osx-catalina.zip -d /opt/
+```
+
 
 ## Setup your `~/.bashrc`
 You'll need to setup your `~/.bashrc` accordingly if you'll like to build your workspace using `catkin`, therefore append the following into your `~/.bashrc`
