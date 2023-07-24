@@ -8,7 +8,7 @@ Notable ROS components that have been tested to work for development,
 - Rviz
 - Rqt
 
-The following machnes have been tested,
+The following OSX versions have been tested,
 - Mac OS: Catalina (10.15.7)
 - Mac OS: Sierra (circa 2019) 
 
