@@ -1,5 +1,5 @@
 # ROS1 Mac OSX Support 
-Developing on Mac OSX with ROS locally built for the past 6+ years has been nice, especially with the support scripts from [ros-install-osx](https://github.com/mikepurvis/ros-install-osx). However, recently, `brew` has been failing more and more commands to a point where building ROS on a Mac is not only frustrating but extremely time consuming. The purpose of this repository is to hold a working copy of the libraries that has successfully built ROS on my Mac OSX machine. It's not elegant at all, in fact, it's very "hacky" and might clobber some existing `brew` packages on your machine. Regardless, I'm putting this together for my future self and the greater ROS community. That being said, I make no guarantees as to whether it will work for you. Good luck!
+Developing on Mac OSX with ROS locally built for the past 6+ years has been nice, especially with the support scripts from [ros-install-osx](https://github.com/mikepurvis/ros-install-osx). However, recently, several `brew` commands are either failing or no longer supported to a point where building ROS on a Mac is not only frustrating, but extremely time consuming. The purpose of this repository is to hold a working copy of the libraries that has successfully built ROS on my Mac OSX machine. It's not elegant at all, in fact, it's very "hacky" and might clobber some existing `brew` packages on your machine. Regardless, I'm putting this together for my future self and the greater ROS community. That being said, I make no guarantees as to whether it will work for you. Good luck!
 
 Notable ROS features that have been tested to work for development,
 - ROS1 Kinetic (core, messages, actionlib, services) 
@@ -13,7 +13,7 @@ The following OSX versions have been tested,
 - Mac OS: Sierra (circa 2019) 
 
 ## Instructions
-- Download the `.zip` files I've conveniently stored on [Google Drive](https://drive.google.com/drive/folders/128wczlwCJNakNOX8ZSfXDFwe7Zl9UEhI?usp=share_link).
+- Download the `.zip` files I've conveniently stored on [Google Drive](https://drive.google.com/drive/folders/128wczlwCJNakNOX8ZSfXDFwe7Zl9UEhI?usp=share_link), I would advise you do this either via an Ethernet connection (or somewhere with fast WiFi, the `*.zip` files are about 3GB. 
 - Extract them directly into the desired directories,
 ```
 unzip usr-local-boost-1-67.zip -d /usr/local/
