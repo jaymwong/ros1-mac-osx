@@ -30,7 +30,7 @@ export LIBGL_ALWAYS_SOFTWARE=1s
 
 source /opt/ros/kinetic/setup.bash
 ```
-After you've done this, `source ~/.bashrc` and navigate your `catkin` workspace and build like you normally would in Ubuntu using `catkin_make`. Personally, I like to see the build time and build with `clang` and `ninja` as follows,
+After you've done this, `source ~/.bashrc` and navigate to your `catkin` workspace and build like you normally would in Ubuntu using `catkin_make`. Personally, I like to see the build time and build with `clang` and `ninja` as follows,
 ```
 time catkin_make -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -j8 --use-ninja;
 ```
