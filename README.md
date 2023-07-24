@@ -1,4 +1,6 @@
 # ROS1 Mac OSX Support 
+For ROS2 support please see: [ros2-mac-osx](https://github.com/jaymwong/ros2-mac-osx). 
+
 Developing on Mac OSX with ROS locally built for the past 6+ years has been nice, especially with the support scripts from [ros-install-osx](https://github.com/mikepurvis/ros-install-osx). Unfortunately, recently several `brew` commands are either failing or no longer supported to a point where building ROS on a Mac is not only frustrating, but extremely time consuming. The purpose of this repository is to hold a working copy of the libraries that has successfully built ROS on my Mac OSX machine. It's not elegant at all, in fact, it's very "hacky" and might clobber some existing `brew` packages on your machine. Regardless, I'm putting this together for my future self and the greater ROS community. That being said, I make no guarantees as to whether it will work for you. Good luck!
 
 Notable ROS features that have been tested to work for development,
@@ -43,5 +45,3 @@ brew install boost@1.76
 brew link --overwrite boost@1.76
 ```
 
-## TODO (Mac OSX build with ROS2)
-I have yet to try this, however, I did come across a decent [blog](http://www.robotandchisel.com/2020/08/10/rviz2-on-mac/) with some instruction demonstrating that this is indeed possible. 
