@@ -35,8 +35,7 @@ source /opt/ros/kinetic/setup.bash
 
 ## Known Issues
 ### Boost Upgrade 
-There seems to be a `boost` incompatibility with the target `boost` built in the `.zip` due to [boost1.67](https://github.com/phusion/passenger/issues/2213). I was able to fix this locally via forcefully upgrading inside `brew` to `1.76`, however, it reportedly works for `1.69`
-
+There seems to be a `boost` incompatibility with the target `boost` built in the `.zip` due to [boost1.67](https://github.com/phusion/passenger/issues/2213). I was able to fix this locally via forcefully upgrading inside `brew` to `1.76`, apparently, it reportedly works for `1.69`, but I have yet to test this.
 ```
 brew install boost@1.76
 brew link --overwrite boost@1.76
