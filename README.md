@@ -1,9 +1,16 @@
 # ROS1 Mac OSX Support 
-The purpose of this repository is to hold a working copy of the libraries that has successfully built ROS1 on my Mac OSX machine. I'm putting this together both for myself and the community as every time I attempt to rebuild from source via (https://github.com/mikepurvis/ros-install-osx)[ros-install-osx], some annoying `brew` issues always seems to occur. After getting frustrated for the N'th time, I figured just zipping up the entire set of `brew`'d items under `/usr/local/` is the quickest, dumbest, thing that seems to be fairly reliable. I have not yet tested any other OS versions, nor have I tested on any other machine, therefore, I make no guarantees as to whether it will work for you. However, I have performed this "hack" several times and have successfully ran ROS1 locally with OpenCV, PCL, Rviz, RQT all functional on my Mac. An older machine has built this successfully on Sierra as well. So good luck!
+Developing on Mac OSX with ROS locally built for the past 6+ years has been nice, especially with the support scripts from [ros-install-osx](https://github.com/mikepurvis/ros-install-osx). However, recently, `brew` has been failing more and more commands to a point where building ROS on a Mac is not only frustrating but extremely time consuming. The purpose of this repository is to hold a working copy of the libraries that has successfully built ROS on my Mac OSX machine. It's not elegant at all, in fact, it's very "hacky". But I'm putting this together but for myself and the community, however, I make no guarantees as to whether it will work for you. 
 
-The following my current machine versions:
-- Mac OS: Catalina (10.15.7)
+Notable ROS components that have been tested to work for development,
 - ROS1 Kinetic 
+- OpenCV 3.3.1
+- PCL
+- Rviz
+- Rqt
+
+The following machnes have been tested,
+- Mac OS: Catalina (10.15.7)
+- Mac OS: Sierra (circa 2019) 
 
 ## Instructions
 - Download the `.zip` files I've conveniently stored on (https://drive.google.com/drive/folders/128wczlwCJNakNOX8ZSfXDFwe7Zl9UEhI?usp=share_link)[Google Drive].
@@ -12,7 +19,6 @@ The following my current machine versions:
 unzip usr-local-boost-1-67.zip -d /usr/local/
 unzip ros-kinetic-mac-osx-catalina.zip -d /opt/
 ```
-
 
 ## Setup your `~/.bashrc`
 You'll need to setup your `~/.bashrc` accordingly if you'll like to build your workspace using `catkin`, therefore append the following into your `~/.bashrc`
