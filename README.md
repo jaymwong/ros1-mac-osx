@@ -37,7 +37,7 @@ time catkin_make -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/clang -D
 
 ## Known Issues
 ### Boost Upgrade 
-There seems to be a `boost` incompatibility with the target `boost` built in the `.zip` due to [boost1.67](https://github.com/phusion/passenger/issues/2213). I was able to fix this locally via forcefully upgrading inside `brew` to `1.76`, although apparently, it reportedly works for `1.69`, but I have yet to test this.
+There seems to be a `boost` incompatibility with the target `boost` built in the `.zip` due to [boost 1.67](https://github.com/phusion/passenger/issues/2213). I was able to fix this locally via forcefully upgrading inside `brew` to `1.76`, although apparently, it reportedly works for `1.69`, but I have yet to test this.
 ```
 brew install boost@1.76
 brew link --overwrite boost@1.76
